@@ -1,0 +1,6 @@
+C:\Users\akuttin\Desktop\C#\Eval\Palindrome\Palindrome\bin\Debug\Palindrome.exe.config
+C:\Users\akuttin\Desktop\C#\Eval\Palindrome\Palindrome\bin\Debug\Palindrome.exe
+C:\Users\akuttin\Desktop\C#\Eval\Palindrome\Palindrome\bin\Debug\Palindrome.pdb
+C:\Users\akuttin\Desktop\C#\Eval\Palindrome\Palindrome\obj\Debug\Palindrome.csprojResolveAssemblyReference.cache
+C:\Users\akuttin\Desktop\C#\Eval\Palindrome\Palindrome\obj\Debug\Palindrome.exe
+C:\Users\akuttin\Desktop\C#\Eval\Palindrome\Palindrome\obj\Debug\Palindrome.pdb
