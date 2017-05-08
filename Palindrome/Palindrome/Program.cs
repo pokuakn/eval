@@ -10,7 +10,7 @@ namespace Palindrome
     {
         static void Main(string[] args)
         {
-            string[] dwarves = { "Gimli", "Fili", "Ilif", "Ilmig", "Mark", "civic" };
+            string[] dwarves = { "Gimli", "Fili", "Ilif", "Ilmig", "Mark" };
           
             foreach (string value in dwarves)
             {
