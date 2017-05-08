@@ -10,7 +10,7 @@ namespace Palindrome
     {
         static void Main(string[] args)
         {
-            string[] dwarves = { "Gimli", "Fili", "Ilif", "Ilmig", "Mark" };
+            string[] dwarves = { "Gimli", "Fili", "Ilif", "Ilmig", "Mark", "civic" };
           
             foreach (string value in dwarves)
             {
@@ -33,7 +33,7 @@ namespace Palindrome
             {
                 //Print Name and print if Palindrome
                 string str = String.Join("", arry);
-                bool pal = IsPalindrome(str);
+                bool pal = IsPalindromeA(str);
                 Console.WriteLine("isPalindrome: {0}, String Permutation: {1} ", pal, str);
               
             }
@@ -64,21 +64,22 @@ namespace Palindrome
         {
             int min = 0;
             int max = value.Length - 1;
-            while (true)
+            bool ret = true;
+
+            if (min > max)
             {
-                if (min > max)
-                {
-                    return true;
-                }
-                char a = value[min];
-                char b = value[max];
-                if (char.ToLower(a) != char.ToLower(b))
-                {
-                    return false;
-                }
-                min++;
-                max--;
+                ret = true;
             }
+            char a = value[min];
+            char b = value[max];
+            if (char.ToLower(a) != char.ToLower(b))
+            {
+                ret = false;
+            }
+
+            return ret;
         }
+          
+        
     }
 }
