@@ -33,7 +33,7 @@ namespace Palindrome
             {
                 //Print Name and print if Palindrome
                 string str = String.Join("", arry);
-                bool pal = IsPalindromeA(str);
+                bool pal = IsPalindrome(str);
                 Console.WriteLine("isPalindrome: {0}, String Permutation: {1} ", pal, str);
               
             }
