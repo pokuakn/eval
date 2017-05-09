@@ -8,6 +8,9 @@ namespace Palindrome
 {
     class subsets
     {
+        /// <summary>
+        /// Get all possible palindromes of a given string.
+        /// </summary>
         public static List<string> GetPalindromes(string source) 
         {
             List<string> subsets = new List<string>();
@@ -18,7 +21,7 @@ namespace Palindrome
                     if (j - i > 1 && source[j - 1] == source[i])
                     {
                         string currentSubset = source.Substring(i, j - i);
-                        if (IsPalindrome1(currentSubset))
+                        if (IsPalindrome(currentSubset))
                         {
                             subsets.Add(currentSubset);
                         }
@@ -30,19 +33,13 @@ namespace Palindrome
         /// <summary>
         /// Determines whether the string is a palindrome.
         /// </summary>
-        public static bool IsPalindrome1(string value)
+        public static bool IsPalindrome(string value)
         {
             string str = value.ToLower();
             string reverse = new string(str.ToCharArray().Reverse().ToArray());
             bool isPalindrome = reverse.Equals(str);
             return isPalindrome;
         }
-        /// <summary>
-        /// Determines whether the string is a palindrome.
-        /// </summary>
-        private static bool IsPalindromeSet(string input)
-        {
-            return !input.Where((t, i) => t != input[input.Length - 1 - i]).Any();
-        }
+        
     }
 }
